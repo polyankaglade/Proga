@@ -24,3 +24,13 @@ elif c < 0 and d > 0:
 else:
     print('Both neg')
     
+# по-другому
+while True:
+    a = int(input('Введите число'))
+    if a > 0:
+        b = 1
+    elif a < 0:
+        b = -1
+    else:
+        b = 0
+    print(b)
