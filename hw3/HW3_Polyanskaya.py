@@ -1,7 +1,8 @@
-request = str(input('Введите слово: '))
-n = -1
-print(request)
-for x in request:
-    result = request[:n]
+# вариант №1
+x = list(input('enter a word: '))
+x +=''.join(' ')
+# я не понимаю как добиться чтоб i было 0 при первом прогоне
+for i,result in enumerate(x):
+    result = ''.join(x[:-i])
     print(result)
-    n -= 1
+
