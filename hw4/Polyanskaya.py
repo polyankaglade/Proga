@@ -1,8 +1,14 @@
 # первый вариант
+# чему равно среднее число слов в строке
+with open("text.txt", encoding="utf-8") as f:
+    text = f.read()
+text = text.replace("\ufeff", "")
+lines = text.splitlines()
+
 vsego = 0
 stroki = 0
 
-for x in lines: # чему равно среднее число слов в строке
+for x in lines:
     stroki += 1
     dlina_str = len(x.split())
     vsego += dlina_str
