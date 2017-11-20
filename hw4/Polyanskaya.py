@@ -5,9 +5,8 @@ with open("text.txt", encoding="utf-8") as f:
 text = text.replace("\ufeff", "")
 lines = text.splitlines()
 
-vsego = 0
 stroki = 0
-
+vsego = 0
 for x in lines:
     stroki += 1
     dlina_str = len(x.split())
