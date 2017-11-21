@@ -20,3 +20,22 @@ while True:
         print('one time, number', first)
     else:
         print('first:',first, 'last:', last)
+
+        
+while True:
+    line = input('enter smth: ')
+    symb = 'a'
+    first = line.find(symb)
+    
+    if line == 'finish':
+        break
+
+    if first == -1:
+        print('nothing found')
+    else:
+        second = line[first+1:].find(symb)
+        if second == -1:
+            print('only once')
+        else:
+            print(second+first+1)
+        
