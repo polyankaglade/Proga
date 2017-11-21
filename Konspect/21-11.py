@@ -33,7 +33,7 @@ while True:
     if first == -1:
         print('nothing found')
     else:
-        second = line[first+1:].find(symb)
+        second = line[first+1:].find(symb) #можно ещё: second = line.find(symb, first+1)
         if second == -1:
             print('only once')
         else:
