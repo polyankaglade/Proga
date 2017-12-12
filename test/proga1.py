@@ -5,5 +5,3 @@ with open("Extinct_languages.tsv", "r", encoding="utf-8") as f:
             print(line)
         else:
             continue
-    
-       
