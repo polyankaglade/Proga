@@ -1,13 +1,10 @@
 numbers = []
-x = float(input('enter a number: '))
+x = input('enter a number: ')
 while x != '':
+    x = float(x)
     numbers.append(x)
     x = input('enter a number: ')
-    if x !='':
-        x = float(x)
-    else:
-        break
-print(numbers)
+#print(numbers)
 
 n = 0
 q = 0
