@@ -29,7 +29,7 @@ def uslovie(dictionary):
 
 def igra(target,score): #я для красоты сделала счётчик угаданых слов
     popytka = len(target)
-    print("Всего у тебя",popytka,"попыток.\n")
+    print("Всего у тебя",popytka,"попыток.\n") #я не поняла надо ли сообщать сколько попыток, так что решила сообщить
     while 0 < popytka <= len(target):
         guess = input("Какое слово загадано? ")
         if guess == target:
