@@ -25,12 +25,8 @@ def create_dic(gram):
 def write_results(dic):
     
     with open("result.txt","w", encoding="utf-8") as f:
-        for i,x in dic.items():
-            i = str(i)
-            x = str(x)
-            s = ''
-            s = i + " : "+ x + "\n"
-            f.write(s)
+        for i in dic:
+            f.write(i+"\n")
     return f
 
 def main():
