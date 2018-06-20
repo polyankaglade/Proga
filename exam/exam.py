@@ -34,7 +34,6 @@ def count_words(words_list):
     for key,value in c.items():            
       result = '{}{:\t>2}\n'.format(key,value)
       f.write(result)
-      print(result)
  
 def main():
   count_words(read_file(get_files()))
